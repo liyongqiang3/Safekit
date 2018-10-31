@@ -7,6 +7,7 @@ target 'TYSafeKitDemo' do
   # use_frameworks!
 
   # Pods for TYSafeKitDemo
+#  pod 'TYSafeKit', :git => 'git@code.aliyun.com:zzuliliyongqiang/SafeKit.git', :branch => 'master'
   pod 'TYSafeKit', :path =>'.'
 
 end

@@ -15,11 +15,27 @@
     "git": "git@localhost/TYSafeKit.git",
     "tag": "0.0.1"
   },
-  "source_files": [
-    "TYSafeKit/Classes",
-    "TYSafeKit/Classes/**/*.{h,m}"
-  ],
-  "exclude_files": "Classes/Exclude",
   "frameworks": "Foundation",
-  "requires_arc": true
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "safeCore",
+      "source_files": [
+        "TYSafeKit/Classes/safeCore/**/*.{h,m}*"
+      ],
+      "public_header_files": [
+        "TYSafeKit/Classes/safeCore/**/*.h"
+      ]
+    },
+    {
+      "name": "Foundation",
+      "source_files": [
+        "TYSafeKit/Classes/Foundation/**/*.{h,m}*",
+        "TYSafeKit/Classes/MRC/**/*.{h,m}*"
+      ],
+      "public_header_files": [
+        "TYSafeKit/Classes/Foundation/**/*.h"
+      ]
+    }
+  ]
 }

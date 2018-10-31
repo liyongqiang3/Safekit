@@ -1,5 +1,9 @@
 PODS:
-  - TYSafeKit (0.0.1)
+  - TYSafeKit (0.0.1):
+    - TYSafeKit/Foundation (= 0.0.1)
+    - TYSafeKit/safeCore (= 0.0.1)
+  - TYSafeKit/Foundation (0.0.1)
+  - TYSafeKit/safeCore (0.0.1)
 
 DEPENDENCIES:
   - TYSafeKit (from `.`)
@@ -9,8 +13,8 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  TYSafeKit: 74ef1518e4a8166b7b505b49e56c3bb3f99c8308
+  TYSafeKit: 61633976962af18c1d3b7ef2a628ab4c3216c195
 
-PODFILE CHECKSUM: d8e2abc8170157b1dfe75bb4f28b76d1d1b6361c
+PODFILE CHECKSUM: 283e982bd9b84a09ef4e6dc096f9d4c15dc32d2d
 
 COCOAPODS: 1.5.3

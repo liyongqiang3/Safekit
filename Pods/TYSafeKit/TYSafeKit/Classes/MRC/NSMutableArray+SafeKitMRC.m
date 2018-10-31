@@ -2,8 +2,8 @@
 //  NSMutableArray+SafeKitMRC.m
 //  SafeKitExample
 //
-//  Created by liyongqiang on 16/2/19.
-//  Copyright © 2016年 liyongqiang. All rights reserved.
+//  Created by 张宇 on 16/2/19.
+//  Copyright © 2016年 zhangyu. All rights reserved.
 //
 
 #import "NSMutableArray+SafeKitMRC.h"

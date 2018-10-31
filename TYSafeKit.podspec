@@ -34,11 +34,18 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TYSafeKit/Classes", "TYSafeKit/Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+ # s.source_files  = "TYSafeKit/Classes", "TYSafeKit/Classes/**/*.{h,m}"
+ # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
-
+ # s.public_header_files = "TYSafeKit/Classes/NSArray+SafeKit.h"
+  s.subspec 'safeCore' do |ss|
+      ss.source_files = ['TYSafeKit/Classes/safeCore/**/*.{h,m}*']
+      ss.public_header_files = ['TYSafeKit/Classes/safeCore/**/*.h']
+  end
+  s.subspec 'Foundation' do |ss|
+      ss.source_files = ['TYSafeKit/Classes/Foundation/**/*.{h,m}*','TYSafeKit/Classes/MRC/**/*.{h,m}*','TYSafeKit/Classes/Public/**/*.{h,m}*']
+      ss.public_header_files = ['TYSafeKit/Classes/Public/**/*.h']
+  end
 
   s.framework  = "Foundation"
   # s.frameworks = "SomeFramework", "AnotherFramework"
