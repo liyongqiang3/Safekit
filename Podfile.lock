@@ -1,0 +1,16 @@
+PODS:
+  - TYSafeKit (0.0.1)
+
+DEPENDENCIES:
+  - TYSafeKit (from `.`)
+
+EXTERNAL SOURCES:
+  TYSafeKit:
+    :path: "."
+
+SPEC CHECKSUMS:
+  TYSafeKit: 74ef1518e4a8166b7b505b49e56c3bb3f99c8308
+
+PODFILE CHECKSUM: d8e2abc8170157b1dfe75bb4f28b76d1d1b6361c
+
+COCOAPODS: 1.5.3

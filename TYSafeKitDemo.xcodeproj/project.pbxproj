@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C88A5EB44E9F0C275D3A1A42 /* libPods-TYSafeKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F70980525CF44F91C426B939 /* libPods-TYSafeKitDemo.a */; };
 		D0CB77C5218955E200DBB41F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CB77C4218955E200DBB41F /* AppDelegate.m */; };
 		D0CB77C8218955E300DBB41F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CB77C7218955E300DBB41F /* ViewController.m */; };
 		D0CB77CB218955E300DBB41F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CB77C9218955E300DBB41F /* Main.storyboard */; };
 		D0CB77CD218955E400DBB41F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0CB77CC218955E400DBB41F /* Assets.xcassets */; };
 		D0CB77D0218955E400DBB41F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CB77CE218955E400DBB41F /* LaunchScreen.storyboard */; };
 		D0CB77D3218955E400DBB41F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CB77D2218955E400DBB41F /* main.m */; };
+		D0CB77DA2189572A00DBB41F /* TYSafeKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D0CB77D92189572A00DBB41F /* TYSafeKit.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07DD9A4D537E52986CCC27D8 /* Pods-TYSafeKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYSafeKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYSafeKitDemo/Pods-TYSafeKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6BA003A8122A8D9F76660ABB /* Pods-TYSafeKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYSafeKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYSafeKitDemo/Pods-TYSafeKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CB77C0218955E200DBB41F /* TYSafeKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYSafeKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0CB77C3218955E200DBB41F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0CB77C4218955E200DBB41F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		D0CB77CF218955E400DBB41F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0CB77D1218955E400DBB41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0CB77D2218955E400DBB41F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0CB77D92189572A00DBB41F /* TYSafeKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TYSafeKit.podspec; sourceTree = SOURCE_ROOT; };
+		F70980525CF44F91C426B939 /* libPods-TYSafeKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYSafeKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88A5EB44E9F0C275D3A1A42 /* libPods-TYSafeKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2564162212E76A3293B301C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BA003A8122A8D9F76660ABB /* Pods-TYSafeKitDemo.debug.xcconfig */,
+				07DD9A4D537E52986CCC27D8 /* Pods-TYSafeKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D0CB77B7218955E200DBB41F = {
 			isa = PBXGroup;
 			children = (
 				D0CB77C2218955E200DBB41F /* TYSafeKitDemo */,
 				D0CB77C1218955E200DBB41F /* Products */,
+				2564162212E76A3293B301C7 /* Pods */,
+				EF5012A0AF39984E40EC6AE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,7 @@
 		D0CB77C2218955E200DBB41F /* TYSafeKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D0CB77D92189572A00DBB41F /* TYSafeKit.podspec */,
 				D0CB77C3218955E200DBB41F /* AppDelegate.h */,
 				D0CB77C4218955E200DBB41F /* AppDelegate.m */,
 				D0CB77C6218955E300DBB41F /* ViewController.h */,
@@ -71,6 +90,14 @@
 			path = TYSafeKitDemo;
 			sourceTree = "<group>";
 		};
+		EF5012A0AF39984E40EC6AE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F70980525CF44F91C426B939 /* libPods-TYSafeKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0CB77D6218955E400DBB41F /* Build configuration list for PBXNativeTarget "TYSafeKitDemo" */;
 			buildPhases = (
+				A0081F5BFFAE76C6A8B22519 /* [CP] Check Pods Manifest.lock */,
 				D0CB77BC218955E200DBB41F /* Sources */,
 				D0CB77BD218955E200DBB41F /* Frameworks */,
 				D0CB77BE218955E200DBB41F /* Resources */,
@@ -129,12 +157,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0CB77D0218955E400DBB41F /* LaunchScreen.storyboard in Resources */,
+				D0CB77DA2189572A00DBB41F /* TYSafeKit.podspec in Resources */,
 				D0CB77CD218955E400DBB41F /* Assets.xcassets in Resources */,
 				D0CB77CB218955E300DBB41F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0081F5BFFAE76C6A8B22519 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYSafeKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0CB77BC218955E200DBB41F /* Sources */ = {
@@ -283,6 +337,7 @@
 		};
 		D0CB77D7218955E400DBB41F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BA003A8122A8D9F76660ABB /* Pods-TYSafeKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +355,7 @@
 		};
 		D0CB77D8218955E400DBB41F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07DD9A4D537E52986CCC27D8 /* Pods-TYSafeKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,25 @@
+{
+  "name": "TYSafeKit",
+  "version": "0.0.1",
+  "summary": "A short description of TYSafeKit.",
+  "description": "A Array or MutableArray safe kit for iOS platform,",
+  "homepage": "http://localhost/TYSafeKit",
+  "license": "MIT",
+  "authors": {
+    "liyongqiang": "1184954731@qq.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "git@localhost/TYSafeKit.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "TYSafeKit/Classes",
+    "TYSafeKit/Classes/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "frameworks": "Foundation",
+  "requires_arc": true
+}
