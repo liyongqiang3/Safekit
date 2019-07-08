@@ -46,12 +46,12 @@
 }
 
 // array[index];
-- (id)safe_objectAtIndexedSubscript:(NSUInteger)idx
+- (id)safe_mObjectAtIndexedSubscript:(NSUInteger)idx
 {
     if (idx >= [self count]) {
         return nil;
     }
-    return [self safe_objectAtIndexedSubscript:idx];
+    return [self safe_mObjectAtIndexedSubscript:idx];
 }
 
 + (void)load {
@@ -61,7 +61,7 @@
         [self safe_swizzleMethod:@selector(safe_insertObject:atIndex:) tarClass:@"__NSArrayM" tarSel:@selector(insertObject:atIndex:)];
         [self safe_swizzleMethod:@selector(safe_removeObjectAtIndex:) tarClass:@"__NSArrayM" tarSel:@selector(removeObjectAtIndex:)];
         [self safe_swizzleMethod:@selector(safe_replaceObjectAtIndex:withObject:) tarClass:@"__NSArrayM" tarSel:@selector(replaceObjectAtIndex:withObject:)];
-        [self safe_swizzleMethod:@selector(safe_objectAtIndexedSubscript:) tarClass:@"__NSArrayM" tarSel:@selector(objectAtIndexedSubscript:)];
+        [self safe_swizzleMethod:@selector(safe_mObjectAtIndexedSubscript:) tarClass:@"__NSArrayM" tarSel:@selector(objectAtIndexedSubscript:)];
 
     });
 }
